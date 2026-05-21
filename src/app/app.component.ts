@@ -9,4 +9,6 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'utn_proyecto';
+  nombre: string = "Eduardo";
+  apellido: string = "Carnevali";
 }

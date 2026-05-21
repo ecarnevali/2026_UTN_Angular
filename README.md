@@ -58,3 +58,39 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
 # 2026_UTN_Angular
+
+
+Practia M1
+1 Creacion de proyecto
+    --> instalar Angular cli
+        ejecuto el comando npm install -g @angular/cli
+    --> crear un nuevo proyecto
+        ejecuto el comando ng new UTN_PROYECTO
+    --> ejecutar el proyecto
+        con el comando ng serve
+
+![alt text](imagenes/ng_serve.png)
+![alt text](imagenes/app_funcionando.png)
+
+
+2 Exploración de la estructura
+    -->Identificar las carpetas y archivos más importantes
+        scr/app : logica principal, aqui crearemos los componentes 
+                                ng generate component nombre_componente
+                    se creara una carpeta "nombre_componente" y los archivos nombre_componente.html, nombre_componente.ts, 
+                    nombre_componente.css y nombre_componente.spec.ts
+                    tambien crearemos los servicios y los modulos
+        app.component.ts : componete principal, este componente es el <app-root></app-root> que llamaremos desde el index.html, 
+                    punto de entrada de la app
+        app.module.ts : es el modulo raiz, agrupa componentes, modulos, servicios y dependencias de la app, este define que componentes 
+                    se cargaran y que modulos se importan 
+        assets : aquí colocaremos las imagenes, iconos, fuentes, etc. recursos estáticos
+        environments : configuración por entorno, dependiendo el ambiente que estemos ejecutando tomara distintos valores de configuración
+                    por ejemplo conexión a la base de datos
+                            environment.development configuración de entorno de desarrollo
+                            environment.production configuración de entorno de produción
+![alt text](imagenes/identificar_carpetas_archivos.png)
+        
+Imgen de mi app funcionado
+
+![alt text](imagenes/imagen_proyecto_funcionando.png)
