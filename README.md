@@ -94,3 +94,23 @@ Practia M1
 Imgen de mi app funcionado
 
 ![alt text](imagenes/imagen_proyecto_funcionando.png)
+
+Practica M2
+
+sen agrega un nuevo componente registro
+![alt text](<imagenes/practicaM2/nuevo componente.png>)
+
+Se agrega un titulo con una descripcion y se crea un formulario
+![alt text](imagenes/practicaM2/formulario.png)
+el campo nombre es obligatorio y tiene que tener mas de 3 caracteres
+el campo email es obligatorio y tiene que tener un formato valido
+el boton regisrar se desabilita hasta que el formulario sea valido
+se utiliza ngClass para cambiar el color de los campos con error
+![alt text](imagenes/practicaM2/validacion1.png)
+![alt text](imagenes/practicaM2/validacion2.png)
+cuando el formulario es valido se habilita el boton registrar
+![alt text](<imagenes/practicaM2/habilitar boton registrar.png>)
+
+se muestra un mensaje de exito con el titulo en color verde utilizando el ngStyle y los campos ingresados se muestran en consola
+![alt text](<imagenes/practicaM2/mensaje exito y mostrar datos en consola.png>)
+

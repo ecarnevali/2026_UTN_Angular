@@ -1,0 +1,19 @@
+
+.custom-error {
+  color: red;
+  font-size: 12px;
+}
+
+.is-invalid {
+  border: 2px solid red;
+  background-color: #ffe6e6;
+}
+
+.is-valid {
+  border: 2px solid green;
+  background-color: #e6ffe6;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}

@@ -1,0 +1,52 @@
+<h1>Registro</h1>
+
+<!--descripcion-->
+<p>Complete el formulario para registrarse en nuestra aplicación.</p>
+
+<div *ngIf="!enviado">
+    <form [formGroup]="formulario" (ngSubmit)="enviar()">
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input [ngClass]="{ 'is-invalid': formulario.get('nombre')?.invalid && formulario.get('nombre')?.touched }"
+                 id="nombre" formControlName="nombre" />
+
+            <div *ngFor="let error of mensajeErrores.nombre">
+                <small class="alert alert-danger custom-error"
+                    *ngIf="formulario.get('nombre')?.hasError(error.tipo) && formulario.get('nombre')?.touched">
+                    {{ error.mensaje }}
+                </small>
+            </div>
+
+
+        </div>
+
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input [ngClass]="{ 'is-invalid': formulario.get('email')?.invalid && formulario.get('email')?.touched }"
+             id="email" formControlName="email" />
+
+            <div *ngFor="let error of mensajeErrores.email">
+                <small class="alert alert-danger custom-error"
+                    *ngIf="formulario.get('email')?.hasError(error.tipo) && formulario.get('email')?.touched">
+                    {{ error.mensaje }}
+                </small>
+            </div>
+
+
+        </div>
+
+        <div class="form-group">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" formControlName="mensaje"></textarea>
+        </div>
+
+        <button type="submit" [disabled]="formulario.invalid">Registrar</button>
+    </form>
+</div>
+<div *ngIf="enviado">
+    <h2 [ngStyle]="{ 'color': colorExito }">¡Registro exitoso!</h2>
+    <p>Gracias por registrarte, {{formulario.value.nombre}}.</p>
+
+    <button type="button" (click)="cerrarMensaje()">Registrar otro usuario</button>
+</div>
