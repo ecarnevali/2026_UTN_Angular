@@ -114,3 +114,24 @@ cuando el formulario es valido se habilita el boton registrar
 se muestra un mensaje de exito con el titulo en color verde utilizando el ngStyle y los campos ingresados se muestran en consola
 ![alt text](<imagenes/practicaM2/mensaje exito y mostrar datos en consola.png>)
 
+Practica M3
+
+Se genera el servicio llamado producto utilizando angular CLi
+![alt text](<imagenes/practicaM3/crear un servicio con angularcli.png>)
+
+Se muestra la lista de producto cargada
+    se utiliza la api de prueba  https://api.escuelajs.co/api/v1/products
+    ![alt text](<imagenes/practicaM3/lista de productos cargada.png>)
+
+pipe estandar
+    ![alt text](<imagenes/practicaM3/pipe descuento.png>)
+
+    ![alt text](<imagenes/practicaM3/pipe estandar y personalizado vista.png>)
+
+producto nuevo agregado
+    ![alt text](<imagenes/practicaM3/producto nuevo agregado.png>)
+
+eliminar el id 69 de la lista
+    ![alt text](<imagenes/practicaM3/eliminar id 69.png>)
+    ![alt text](<imagenes/practicaM3/eliminado el id 69.png>)
+

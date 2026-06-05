@@ -1,0 +1,29 @@
+<div>
+    <h1>Lista de Productos</h1>
+
+    <button (click)="agregarProducto()" class="btn btn-primary">Agregar Producto</button>
+
+    <div *ngIf="productos.length > 0">
+        @for(producto of productos; track producto.id) {
+        <div>
+            <h2>Titulo: {{ producto.title | uppercase }}</h2>
+            <hr />
+            <span>Precio: {{ producto.price | currency:'USD':'symbol':'1.2-2' }}</span>
+            <br />
+            <span>Precio con descuento: {{ producto.price | descuento:precioDescuento | currency:'USD':'symbol':'1.2-2' }}</span>
+            <br />
+            <span>Descripción: {{ producto.description }}</span>
+            <br />
+            <span>Fecha de creación: {{ producto.creationAt | date:'yyyy-MM-dd' }}</span>
+            <br />
+
+
+            <button class="btn btn-danger" (click)="eliminarProducto(producto.id)">Eliminar</button>
+        </div>
+        
+        }
+    </div>
+    <div *ngIf="productos.length === 0">
+        <p>No hay productos disponibles.</p>
+    </div>
+</div>
