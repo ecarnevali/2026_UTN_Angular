@@ -1,0 +1,21 @@
+<div>
+    <h1>Detalle del Usuario</h1>
+
+
+
+    <div *ngIf="usuario">
+        <h2>Nombre: {{ usuario.name | uppercase }}</h2>
+        <hr />
+        <span>Email: {{ usuario.email }}</span>
+        <br />
+        <span>Rol: {{ usuario.role }}</span>
+        <br />
+        <span>Fecha de creación: {{ usuario.creationAt | date:'yyyy-MM-dd' }}</span>
+        <br />
+        <hr />
+        <br />
+    </div>
+
+    <button class="btn btn-secondary" routerLink="/usuarios">Volver</button>
+</div>
+

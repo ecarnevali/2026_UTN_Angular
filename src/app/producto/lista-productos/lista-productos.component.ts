@@ -4,10 +4,12 @@ import { Producto } from '../../model/producto';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { DescuentoPipe } from '../../pipes/descuento.pipe';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-lista-productos',
-  imports: [CommonModule, ReactiveFormsModule,DescuentoPipe],
+  standalone: true,
+  imports: [CommonModule, ReactiveFormsModule,DescuentoPipe, RouterLink],
   templateUrl: './lista-productos.component.html',
   styleUrl: './lista-productos.component.css'
 })

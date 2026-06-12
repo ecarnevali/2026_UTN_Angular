@@ -19,6 +19,7 @@
 
 
             <button class="btn btn-danger" (click)="eliminarProducto(producto.id)">Eliminar</button>
+            <button class="btn btn-info" [routerLink]="['/productos', producto.id]">Ver Detalles</button>
         </div>
         
         }

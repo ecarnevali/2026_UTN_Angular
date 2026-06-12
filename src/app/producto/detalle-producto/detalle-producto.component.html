@@ -1,0 +1,18 @@
+<div>
+    <h1>Detalle del Producto</h1>
+
+    <div *ngIf="producto">
+        <h2>Titulo: {{ producto.title | uppercase }}</h2>
+        <hr />
+        <span>Precio: {{ producto.price | currency:'USD':'symbol':'1.2-2' }}</span>
+        <br />
+        <span>Precio con descuento: {{ producto.price | descuento:precioDescuento | currency:'USD':'symbol':'1.2-2'}}</span>
+        <br />
+        <span>Descripción: {{ producto.description }}</span>
+        <br />
+        <span>Fecha de creación: {{ producto.creationAt | date:'yyyy-MM-dd' }}</span>
+        <br />
+    </div>
+
+    <button class="btn btn-secondary" routerLink="/productos">Volver</button>
+</div>
