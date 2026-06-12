@@ -135,3 +135,28 @@ eliminar el id 69 de la lista
     ![alt text](<imagenes/practicaM3/eliminar id 69.png>)
     ![alt text](<imagenes/practicaM3/eliminado el id 69.png>)
 
+Practoca 4
+
+    menu
+    link a home
+    ![alt text](<imagenes/practica4/home.png>)
+    link usuarios
+    ![alt text](<imagenes/practica4/link usuario.png>)
+    link detalle de usuario
+    ![alt text](<imagenes/practica4/ver detalle usuario.png>)
+
+    link vista de producto
+    ![alt text](<imagenes/practica4/link vista de productos.png>)
+    link detalle de un producto
+    ![alt text](<imagenes/practica4/detalle de producto.png>)
+
+    prueba del localstorage borro la url
+    ![alt text](<imagenes/practica4/borro la url para probar el localstorage.png>)
+    vuelvo a cargar
+    ![alt text](<imagenes/practica4/vuelve a cargar la vista del detalle del producto.png>)
+     ![alt text](<imagenes/practica4/inspeccionar localstorage.png>)
+
+
+
+    versel
+    https://vercel.com/new/eduaro-carnevali-s-projects/success?auto-redirect=true&developer-id=&external-id=&redirect-url=&branch=main&deploymentUrl=2026-utn-angular-n4pb1j1oy-eduaro-carnevali-s-projects.vercel.app&projectName=2026-utn-angular&s=https%3A%2F%2Fgithub.com%2Fecarnevali%2F2026_UTN_Angular&gitOrgLimit=&hasTrialAvailable=1&totalProjects=1&flow-id=GVBoh3hYMZ1MMXDW14dN2&teamSlug=eduaro-carnevali-s-projects
